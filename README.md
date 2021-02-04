@@ -4,7 +4,7 @@ Instalando una aplicación web y añadiendo un certificado HTTPS.
 
 ## Preparando la máquina
 
-Necesitamos una máuina con al menos 2GB de RAM y con los puertos HTTP(80) y HTTPS(443) abiertos.
+Necesitamos una máquina con al menos 2GB de RAM y con los puertos HTTP(80) y HTTPS(443) abiertos.
 
 ## Preparando nuestro dominio
 
@@ -19,6 +19,10 @@ Cuando termine este proceso, volvemos a la ventana de servicios y vamos a Mis do
 En la nueva página que se nos abre, deberemos de crear 2 registros DNS de tipo A que apunten a nuestra máquina de Amazon, en mi caso los registros han quedado de la siguiente manera.
 
 ![Imagen de demostracion 1](/capturas/captura1.png)
+
+Guardamos los cambios que hemos hecho.
+
+Después de esto el dominio empezará a procesarse por todos los lugares posibles del mundo, es cuestión de tiempo que esté en funcionamiento y podamos empezar a utilizarlo.
 
 ## Convirtiendo nuestro sitio en un sitio seguro
 
@@ -47,3 +51,9 @@ Vamos a la página de [Certbot](https://certbot.eff.org/instructions) (el enlace
 5. Obtenemos el certificado
 
 >sudo certbot --apache -m correo@demo.es --agree-tos --no-eff-email -d nombre_dominio(ej. iaw-rcap.tk)
+
+Si entramos en nuestro dominio, veremos que está reconocido como un sitio seguro y que dispone de un certificado SSL.
+
+![Imagen de demostracion 1](/capturas/captura2.png)
+
+![Imagen de demostracion 1](/capturas/captura3.png)
