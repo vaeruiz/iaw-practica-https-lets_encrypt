@@ -57,3 +57,7 @@ Si entramos en nuestro dominio, veremos que está reconocido como un sitio segur
 ![Imagen de demostracion 1](/capturas/captura2.png)
 
 ![Imagen de demostracion 1](/capturas/captura3.png)
+
+## Script de automatización del entorno
+
+El script creado parte de la base de que se va a montar un Wordpress a través de la utilidad WPCLI.
