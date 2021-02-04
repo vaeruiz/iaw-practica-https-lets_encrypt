@@ -4,7 +4,7 @@ Instalando una aplicación web y añadiendo un certificado HTTPS.
 
 ## Preparando la máquina
 
-Necesitamos una máquina con al menos 2GB de RAM y con los puertos HTTP(80) y HTTPS(443) abiertos.
+Necesitamos una máquina con al menos 2GB de RAM y con los puertos HTTP(80), HTTPS(443) y MySQL(3306) abiertos.
 
 ## Preparando nuestro dominio
 
