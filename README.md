@@ -50,7 +50,7 @@ Vamos a la página de [Certbot](https://certbot.eff.org/instructions) (el enlace
 
 5. Obtenemos el certificado
 
->sudo certbot --apache -m correo@demo.es --agree-tos --no-eff-email -d nombre_dominio(ej. iaw-rcap.tk)
+>sudo certbot --apache -m email@mail.es --agree-tos --no-eff-email -d nombre_dominio(ej. iaw-rcap.tk)
 
 Si entramos en nuestro dominio, veremos que está reconocido como un sitio seguro y que dispone de un certificado SSL.
 
