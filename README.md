@@ -19,3 +19,31 @@ Cuando termine este proceso, volvemos a la ventana de servicios y vamos a Mis do
 En la nueva página que se nos abre, deberemos de crear 2 registros DNS de tipo A que apunten a nuestra máquina de Amazon, en mi caso los registros han quedado de la siguiente manera.
 
 ![Imagen de demostracion 1](/capturas/captura1.png)
+
+## Convirtiendo nuestro sitio en un sitio seguro
+
+Después de este último paso instalamos nuestra aplicación web, y pasamos a convertir nuestro dominio http a https.
+
+Para ello hacemos lo siguiente:
+
+Vamos a la página de [Certbot](https://certbot.eff.org/instructions) (el enlace va directo al apartado de instrucciones), y seleccionamos nuestro tipo de servidor y SO, de forma automática nos llevará a los pasos que tenemos que hacer, en mi caso son los siguientes:
+
+1. En la terminal, instalamos y actualizamos snapd
+
+>sudo snap install core; sudo snap refresh core
+
+2. Por si acaso, eliminanos cualquier instalación antigua que exista de certbot
+
+>sudo apt-get remove certbot
+
+3. Instalamos certbot con snapd
+
+>sudo snap install --classic certbot
+
+4. De forma adicional creamos un alias para poder utilizarlo
+
+> sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+5. Obtenemos el certificado
+
+>sudo certbot --apache -m correo@demo.es --agree-tos --no-eff-email -d nombre_dominio(ej. iaw-rcap.tk)
